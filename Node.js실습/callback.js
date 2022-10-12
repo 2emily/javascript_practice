@@ -1,3 +1,4 @@
+//callback으로 세 수 더하기
 function adder(a, b, callback) {
     if (a == 0 || b == 0) {
         callback("no zero", null);
@@ -25,4 +26,4 @@ function add_all(a, b, c) {
         } else {
             handle_error(err);
         }
-    });
+    })};
