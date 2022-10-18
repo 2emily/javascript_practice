@@ -1,0 +1,56 @@
+{
+  "name": "todo",
+  "author": "const",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start-dev": "nodemon index.ts --exec ts-node",
+    "start-prod": "node dist/index.js",
+    "test": "jest --forceExit",
+    "build": "tsc"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://kdt-gitlab.elice.io/sw_track/class_03/materials/unique"
+  },
+  "bugs": {
+    "url": "https://kdt-gitlab.elice.io/sw_track/class_03/materials/unique"
+  },
+  "dependencies": {
+    "@sindresorhus/is": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^29.1.2",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.8.4",
+    "@types/supertest": "^2.0.12",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "jest": "^29.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "supertest": "^6.2.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
