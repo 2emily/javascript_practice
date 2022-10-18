@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add를 읽어오기 -->
+    <script src="js/add.js"></script>
+    <!-- subtract를 읽어오기 -->
+    <script src="js/subtract.js"></script>
+    <title>Example #1</title>
+  </head>
+  <body>
+    <h1>즉시 실행 함수로 스코프를 형성</h1>
+    <script>
+      window.addEventListener("load", (event) => {
+        var num = 10;
+        var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log(`add.js addOne: 10 + 1 = ${adder.addOne(num)}`);
+        console.log(`add.js addTwo: 10 + 2 = ${adder.addTwo(num)}`);
+        console.log(
+          `add.js addNumbers: ${nums
+            .join(" + ")
+            .slice(0, -1)} = ${adder.addNumbers(nums)}`
+        );
+
+        console.log(
+          `subtract.js subtractOne: 10 - 1 = ${subtractor.subtractOne(num)}`
+        );
+        console.log(
+          `subtract.js subtractOne: 10 - 2 = ${subtractor.subtractTwo(num)}`
+        );
+      });
+    </script>
+  </body>
+</html>
