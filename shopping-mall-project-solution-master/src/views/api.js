@@ -72,6 +72,7 @@ async function patch(endpoint, params = "", data) {
     },
     body: bodyData,
   });
+  console.log("token가져옴");
 
   // 응답 코드가 4XX 계열일 때 (400, 403 등)
   if (!res.ok) {
